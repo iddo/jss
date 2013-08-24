@@ -25,7 +25,7 @@ Example
 Create a file name `helloworld` with the following content
 
 ```java
-#!/usr/bin/env
+#!/usr/bin/env jss
 System.out.println("Hello World!");
 ```
 
