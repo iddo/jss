@@ -21,4 +21,9 @@ then
 	echo "Command: $COMMAND" >> $LOG
 	$COMMAND
 fi
-java -cp "$OUTPUT" jss$CHECKSUM $1
+ARGS=
+for ARG in "${@}"
+do
+	ARGS="$ARGS \"$ARG\""
+done
+eval java -cp "$OUTPUT" jss$CHECKSUM $ARGS
